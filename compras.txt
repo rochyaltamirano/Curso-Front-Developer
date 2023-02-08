@@ -1,0 +1,4 @@
+Listado de compras:
+ - bla
+ - bla bla
+ - bla bla bla

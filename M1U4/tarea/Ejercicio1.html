@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: Medio de transporte</title>
+</head>
+<body>
+    <script>
+        const medio1 = "pie";
+        const medio2 = "bicicleta";
+        const medio3 = "colectivo";
+        const medio4 = "auto";
+        const medio5 = "avión";
+
+        const distancia = prompt('Ingrese una distancia:', ''); // prompt > Cada vez que necesitamos ingresar un dato con esta función, aparece una ventana donde cargamos el valor.
+
+
+        if (distancia > 0 && distancia <= 1000){
+            document.write(`Debe ir en el medio de transporte: ${medio1}`);
+        }else if (distancia > 1000 && distancia <= 10000){
+            document.write(`Debe ir en el medio de transporte: ${medio2}`);
+        }else if (distancia > 10000 && distancia <= 30000){
+            document.write(`Debe ir en el medio de transporte: ${medio3}`);
+        }else if (distancia > 30000 && distancia <=100000){
+            document.write(`Debe ir en el medio de transporte: ${medio4}`);
+        }else{
+            document.write(`Debe ir en el medio de transporte: ${medio5}`);
+        }
+    </script>
+    
+</body>
+</html>

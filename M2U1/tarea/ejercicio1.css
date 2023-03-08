@@ -1,0 +1,20 @@
+.botonRojo{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border: none;
+}
+
+.botonAzul{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border: none;
+}
+
+.botonVerde{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border: none;
+}

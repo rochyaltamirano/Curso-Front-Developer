@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <p>
+        <button onClick="cambiarFondo('rojo')" class="botonRojo"></button>
+        <button onClick="cambiarFondo('azul')" class="botonAzul"></button>
+        <button onClick="cambiarFondo('verde')" class="botonVerde"></button>
+    </p>
+
+
+    <script>
+        function cambiarFondo(color){
+            if (color == 'rojo'){
+                document.body.style.backgroundColor = "#FF0000";
+            }  
+            else if (color == 'azul'){
+                document.body.style.backgroundColor = "#0000FF";
+            }
+            else if (color == 'verde'){
+                document.body.style.backgroundColor = "#008000";
+            }
+        }
+    </script>   
+</body>
+</html>

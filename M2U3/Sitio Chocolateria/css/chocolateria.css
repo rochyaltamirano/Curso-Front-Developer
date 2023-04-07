@@ -1,0 +1,37 @@
+/*font-family: 'Amatic SC', cursive;
+*/
+
+.portada {
+    background: url(../img/portada4.jpg) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 600px;
+    color: white;
+}
+
+.buscar {
+
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.texto-navbar{
+    color: red;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight: inherit;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+footer {
+    background-color: #aaa;
+}
+

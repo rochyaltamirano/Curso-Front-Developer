@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--link a la fuente Al -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Cervecería RX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/cerveceria.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BEER X</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavSupportedContent"
+                aria-controls="navbarNavSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Conocenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- acá va el contenido de nuestro sitio-->
+        <div id="home" class="row align-items-center hero">
+            <div class="col-lg-3 offset-lg-2">
+                <p>Bajada</p>
+                <h1>Título principal</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum debitis, et ex eos ut adipisci esse
+                    vel quas fugiat quis unde sed ducimus quae illum. Voluptate quod deserunt officia cupiditate.</p>
+            </div>
+        </div>
+    </div>
+    <!--div que abre la fila-->
+    <div class="row my-3">
+        <div id="novedades" class="col-md-5 offset-md-2">
+            <h2>Novedades</h2>
+            <ul class="lista-novedades">
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/novedades01.jpg" alt="">Nuevas recetas 1</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/novedades01.jpg" alt="">Nuevas recetas 2</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/novedades01.jpg" alt="">Nuevas recetas 3</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/novedades01.jpg" alt="">Nuevas recetas 4</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/novedades01.jpg" alt="">Nuevas recetas 5</a>
+                </li>
+            </ul>
+        </div> <!--cierre novedades-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nueva receta 1</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ejemplo de lo que venga de la BD con la info de la receta 1</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fin de Modal -->
+
+        <div class="col-md-3 my-3">
+            <!-- inicio de testimonios -->
+            <div class="rounded py-5 testimonios">
+                <h2 class="text-center">Testimonios</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>"¡La mejor birra del mundo!"</h5>
+                                <p>Francisco, Monte Grande</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"¡La mejor birra del mundo 2!"</h5>
+                                <p>Flavia, Devoto</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"¡La mejor birra del mundo 3!"</h5>
+                                <p>Eric, Mataderos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div> <!--cierre de testimonios-->
+
+    </div> <!--div que cierra la fila de novedades y testimonios-->
+    <footer>
+        <p class="text-center">Diseñado por Rocío Altamirano :D</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

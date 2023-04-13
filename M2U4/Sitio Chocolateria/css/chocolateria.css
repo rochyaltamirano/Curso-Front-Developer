@@ -17,10 +17,27 @@ h1 {
 
 h2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+
+.staff {
+    background: #efefef;
+}
+
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
 }
 
 footer {
     background-color: #aaa;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}

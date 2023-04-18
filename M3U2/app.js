@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var serviciosRouter = require('./routes/servicios'); //servicios.js
 var contactoRouter = require('./routes/contacto'); //contacto.js
+var tareaRouter = require('./routes/tarea') //tarea.hbs
 
 
 var app = express();
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/servicios', serviciosRouter);
 app.use('/contacto', contactoRouter);
+app.use('/tarea', tareaRouter);
 
 app.get('/ruta1', function (req, res){
   res.send('Hola soy la página de ruta 1')
@@ -35,6 +37,10 @@ app.get('/nosotros', function (req, res){
 
 app.get('/ruta3', function (req, res){
   res.send('Hola soy la página de ruta 3')
+})
+
+app.get('/tarea', function (req, res){
+  res.render('tarea');
 })
 
 // catch 404 and forward to error handler

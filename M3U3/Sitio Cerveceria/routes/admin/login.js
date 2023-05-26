@@ -11,7 +11,7 @@ router.get('/', function(req, res, next){
 /*para destruir variables de session*/
 router.get('/logout', function(req, res, next) {
     req.session.destroy(); //destruir
-    red.render ('admin/login', {
+    res.render ('admin/login', {
         layout: 'admin/layout'
     });
 });
